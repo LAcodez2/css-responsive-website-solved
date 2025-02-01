@@ -5,13 +5,139 @@
 */
 
 @media (min-width: 1024px) {
-  /* .top-navigation .trigram {
+  .top-navigation .trigram {
     display: none;
-  } */
+  }
+
+  .top-navigation ul li a:hover {
+    color: black;
+  }
+
+  .teammate-social-icons div:hover {
+    background-color: gray;
+  }
+
+  .social-icons div:hover {
+    color: white;
+  }
+
+  .footer-contacts ul li a:hover {
+    color: white;
+  }
 
   /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
 }
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
+@media (min-width: 720px) and (max-width: 1023px) {
+  .top-navigation .trigram {
+    display: block;
+  }
 
+  .top-navigation ul {
+    display: none;
+  }
+
+  .portfolio-list {
+    flex-direction: column;
+  }
+
+  .portfolio-item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .teammates-list:before,
+  .teammates-list:after {
+    display: none;
+  }
+
+  .teammates-list-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+
+  .teammate {
+    width: 100%;
+  }
+
+  .teammate-img-wrapper {
+    width: 100%;
+  }
+
+  .teammate-data {
+    text-align: center;
+  }
+
+  .teammate-social-icons {
+    align-self: center;
+  }
+
+  .footer-contacts {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 100px;
+  }
+}
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+
+@media (max-width: 719px) {
+  .header-content {
+    justify-content: space-around;
+  }
+
+  .top-navigation .trigram {
+    display: block;
+  }
+
+  .top-navigation ul {
+    display: none;
+  }
+
+  .portfolio-list {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    align-self: center;
+  }
+
+  .section-info {
+    width: 100%;
+    align-self: center;
+  }
+
+  .content p.subtext {
+    width: 80%;
+  }
+
+  .teammates-list-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .teammates-list:before,
+  .teammates-list:after {
+    display: none;
+  }
+
+  .teammate {
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid;
+    color: black;
+    padding: 30px 40px;
+    width: 100%;
+  }
+
+  footer .social-icons {
+    flex-direction: column;
+    color: white;
+  }
+
+  .footer-contacts {
+    flex-direction: column;
+    align-items: center;
+  }
+}
